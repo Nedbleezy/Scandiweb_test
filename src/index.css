@@ -1,0 +1,62 @@
+:root {
+  --green: #5ece7b;
+  --white: #fff;
+  --offWhite: #a3a3a3;
+  --offW: #fdfdfd;
+  --dark: #2c2b2b;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: var(--offW);
+  color: var(--offWhite);
+  font-family: 'Raleway', sans-serif;
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+}
+
+html,
+body,
+#root {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.menu-open {
+  display: block;
+  opacity: 1;
+}
+
+.caret-rotate {
+  transform: rotate(180deg);
+}
+
+/* //javascript styles on clicked */
+.select-clicked {
+  border: 1px #26489a solid;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+/* remove when you have changed to styled components {product details page}*/
+.thumbnail {
+  transition: all 0.5s ease;
+  margin: 20px;
+}
+.thumbnail img {
+  transition: all 0.5s ease;
+}
+.thumbnail:hover img {
+  transform: scale(1.5);
+  cursor: pointer;
+}
